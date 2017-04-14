@@ -1,0 +1,16 @@
+<router-outlet name="navbar"></router-outlet>
+<div class="app-body">
+    <jhi-sidebar></jhi-sidebar>
+
+    <!-- Main content -->
+    <main class="main">
+        <jhi-breadcrumbs></jhi-breadcrumbs>
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+            <router-outlet name="popup"></router-outlet>
+        </div><!-- /.conainer-fluid -->
+    </main>
+
+    <jhi-aside></jhi-aside>
+</div>
+<jhi-footer></jhi-footer>
